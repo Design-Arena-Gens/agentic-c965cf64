@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Parcours vers l'ingénierie mécatronique & IA</title>
+    <meta
+      name="description"
+      content="Roadmap détaillée des compétences à acquérir pour devenir ingénieur mécatronique spécialisé en robotique et intelligence artificielle."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Feuille de route autodidacte</p>
+        <h1>
+          De débutant à ingénieur mécatronique en robotique & intelligence artificielle
+        </h1>
+        <p class="hero__lead">
+          Identifiez les savoirs fondamentaux, les compétences techniques et les projets à réaliser pour bâtir une expertise solide et opérationnelle.
+        </p>
+        <div class="hero__cta">
+          <a href="#stages" class="btn btn--primary">Explorer les étapes</a>
+          <a href="#roadmap" class="btn btn--ghost">Voir la feuille de route</a>
+        </div>
+      </div>
+      <div class="hero__badge">
+        <span>Robotique</span>
+        <span>Mécanique</span>
+        <span>Électronique</span>
+        <span>IA</span>
+      </div>
+    </header>
+
+    <main>
+      <section id="stages" class="section section--accent">
+        <div class="section__header">
+          <h2>Étapes de progression</h2>
+          <p>
+            Activez un niveau pour concentrer vos efforts sur les compétences prioritaires. Chaque niveau consolide le précédent.
+          </p>
+        </div>
+        <div class="filters" role="tablist" aria-label="Filtrer par niveau">
+          <button class="filters__btn is-active" data-level="all" role="tab" aria-selected="true">
+            Tous les niveaux
+          </button>
+          <button class="filters__btn" data-level="debutant" role="tab" aria-selected="false">
+            Débutant
+          </button>
+          <button class="filters__btn" data-level="intermediaire" role="tab" aria-selected="false">
+            Intermédiaire
+          </button>
+          <button class="filters__btn" data-level="avance" role="tab" aria-selected="false">
+            Avancé
+          </button>
+        </div>
+
+        <div class="competence-grid">
+          <article class="competence-card" data-level="debutant">
+            <h3>Fondamentaux scientifiques</h3>
+            <ul>
+              <li>Mathématiques : algèbre, trigonométrie, calcul différentiel et intégral</li>
+              <li>Physique : mécanique, électricité, magnétisme, thermodynamique</li>
+              <li>Statistiques de base pour la compréhension des données</li>
+              <li>Programmation logique avec Python (bases)</li>
+            </ul>
+            <p class="competence-card__hint">
+              Objectif : maîtriser les concepts indispensables pour manipuler modèles, moteurs et capteurs.
+            </p>
+          </article>
+
+          <article class="competence-card" data-level="debutant">
+            <h3>Outils & culture d'ingénierie</h3>
+            <ul>
+              <li>Utilisation de Git & GitHub pour le versionnement</li>
+              <li>Notions de modélisation 3D (Fusion 360, SolidWorks, FreeCAD)</li>
+              <li>Lecture de schémas électriques et composants de base</li>
+              <li>Montage d'un projet Arduino ou Raspberry Pi simple</li>
+            </ul>
+            <p class="competence-card__hint">
+              Objectif : devenir à l'aise avec les outils collaboratifs et les prototypages rapides.
+            </p>
+          </article>
+
+          <article class="competence-card" data-level="intermediaire">
+            <h3>Mécanique & conception</h3>
+            <ul>
+              <li>Analyse des matériaux, résistance, tolérances</li>
+              <li>Conception mécanique (CAD), assemblages et cinématique</li>
+              <li>Fabrication numérique : impression 3D, découpe laser, CNC</li>
+              <li>Maintenance préventive et diagnostic sur prototypes</li>
+            </ul>
+            <p class="competence-card__hint">
+              Objectif : transformer des modèles virtuels en systèmes mécaniques fiables.
+            </p>
+          </article>
+
+          <article class="competence-card" data-level="intermediaire">
+            <h3>Électronique & embarqué</h3>
+            <ul>
+              <li>Conception de circuits imprimés (KiCad, Altium)</li>
+              <li>Capteurs & actionneurs : lecture de datasheets, intégration</li>
+              <li>Programmation embarquée (C/C++, MicroPython, ROS 2 sur microcontrôleurs)</li>
+              <li>Protocoles de communication : UART, I2C, SPI, CAN</li>
+            </ul>
+            <p class="competence-card__hint">
+              Objectif : faire communiquer mécaniques et logiciels via des systèmes fiables.</p>
+          </article>
+
+          <article class="competence-card" data-level="avance">
+            <h3>Robotique & contrôle</h3>
+            <ul>
+              <li>Modélisation cinématique et dynamique des robots</li>
+              <li>Commande : PID avancé, contrôle optimal, MPC</li>
+              <li>ROS 2 : nodes, topics, services, simulation Gazebo</li>
+              <li>Vision par ordinateur : calibration, SLAM, perception 3D</li>
+            </ul>
+            <p class="competence-card__hint">
+              Objectif : concevoir des robots autonomes stables et sûrs.</p>
+          </article>
+
+          <article class="competence-card" data-level="avance">
+            <h3>Intelligence artificielle appliquée</h3>
+            <ul>
+              <li>Apprentissage automatique : régression, classification, réseaux de neurones</li>
+              <li>Apprentissage par renforcement pour la robotique</li>
+              <li>Traitement du signal et fusion de capteurs</li>
+              <li>MLOps & déploiement embarqué (TensorRT, ONNX Runtime)</li>
+            </ul>
+            <p class="competence-card__hint">
+              Objectif : doter les robots de capacités de perception et de décision.</p>
+          </article>
+
+          <article class="competence-card" data-level="avance">
+            <h3>Management & sécurité</h3>
+            <ul>
+              <li>Gestion de projet agile, estimation des risques</li>
+              <li>Normes industrielles : ISO 12100, sécurité des machines</li>
+              <li>Documentation technique & rédaction de cahiers des charges</li>
+              <li>Éthique de l'IA et conformité réglementaire</li>
+            </ul>
+            <p class="competence-card__hint">
+              Objectif : assurer viabilité, conformité et adoption des solutions.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="learning-path" class="section">
+        <div class="section__header">
+          <h2>Projets d'apprentissage guidés</h2>
+          <p>Chaque projet renforce un bloc de compétences tout en produisant un livrable tangible.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline__item" data-level="debutant">
+            <div class="timeline__badge">Débutant</div>
+            <h3>Robot mobile à capteurs simples</h3>
+            <ul>
+              <li>Assembler un châssis à roues et intégrer un microcontrôleur</li>
+              <li>Programmer la détection d'obstacles et la navigation basique</li>
+              <li>Documenter câblage, code et résultats de tests</li>
+            </ul>
+          </div>
+          <div class="timeline__item" data-level="intermediaire">
+            <div class="timeline__badge">Intermédiaire</div>
+            <h3>Bras robotisé contrôlé par vision</h3>
+            <ul>
+              <li>Concevoir les pièces mécaniques imprimées en 3D</li>
+              <li>Créer une carte de contrôle moteur + drivers</li>
+              <li>Mettre en œuvre une détection d'objets par caméra et calibrer le bras</li>
+            </ul>
+          </div>
+          <div class="timeline__item" data-level="avance">
+            <div class="timeline__badge">Avancé</div>
+            <h3>Robot autonome chargé de mission</h3>
+            <ul>
+              <li>Fusion de capteurs (LiDAR + IMU) et localisation SLAM</li>
+              <li>Planification de trajectoire sous contraintes</li>
+              <li>Boucle complète perception-décision-action en ROS 2</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="roadmap" class="section section--accent">
+        <div class="section__header">
+          <h2>Feuille de route structurée</h2>
+          <p>Répartissez votre progression sur 18 à 30 mois selon votre rythme.</p>
+        </div>
+        <div class="roadmap">
+          <div class="roadmap__column">
+            <h3>Phase 1 · 0-6 mois</h3>
+            <ul>
+              <li>Finaliser mathématiques et physique appliquées</li>
+              <li>Pratiquer Python + Git quotidiennement</li>
+              <li>Construire 2 à 3 mini-projets Arduino/Raspberry Pi</li>
+              <li>Participer à un fablab ou communauté locale</li>
+            </ul>
+          </div>
+          <div class="roadmap__column">
+            <h3>Phase 2 · 6-18 mois</h3>
+            <ul>
+              <li>Approfondir conception mécanique et électronique</li>
+              <li>Suivre un cursus ROS 2 et contrôle avancé</li>
+              <li>Lancer un projet open source collaboratif</li>
+              <li>Obtenir une première expérience (stage, freelance, concours)</li>
+            </ul>
+          </div>
+          <div class="roadmap__column">
+            <h3>Phase 3 · 18-30 mois</h3>
+            <ul>
+              <li>Spécialiser IA embarquée ou robotique collaborative</li>
+              <li>Industrialiser un prototype (normes, tests, documentation)</li>
+              <li>Créer un portfolio professionnel détaillé</li>
+              <li>Préparer certifications (Siemens, NVIDIA Jetson, MITx)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__header">
+          <h2>Compétences transverses & ressources</h2>
+        </div>
+        <div class="resources">
+          <article class="resource">
+            <h3>Compétences humaines</h3>
+            <ul>
+              <li>Communication technique (rapports, présentations)</li>
+              <li>Gestion du temps et planification</li>
+              <li>Travail en équipe multidisciplinaire</li>
+              <li>Veille technologique et recherche scientifique</li>
+            </ul>
+          </article>
+          <article class="resource">
+            <h3>Ressources d'apprentissage</h3>
+            <ul>
+              <li>MOOCs : Coursera (Robotics, AI), edX (MITx), OpenClassrooms</li>
+              <li>Plateformes : Robot Ignite Academy, MathWorks, NVIDIA Deep Learning</li>
+              <li>Communautés : IEEE RAS, ROS Discourse, forums Arduino & Stack Exchange</li>
+              <li>Projets open source : ROS 2 demos, OpenManipulator, TurtleBot</li>
+            </ul>
+          </article>
+          <article class="resource">
+            <h3>Certification & carrière</h3>
+            <ul>
+              <li>Préparer un dossier de projets (GitHub, vidéos de démonstration)</li>
+              <li>Participer à des compétitions (RoboCup, Eurobot, FIRST)</li>
+              <li>Identifier les secteurs : industrie 4.0, santé, logistique, spatial</li>
+              <li>Construire un réseau : meetups, LinkedIn, mentors</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        Suivez une progression incrémentale : consolidez chaque compétence par la pratique concrète et la documentation de vos projets.
+      </p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
